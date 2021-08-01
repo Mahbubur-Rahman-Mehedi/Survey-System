@@ -1,0 +1,43 @@
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#btn{
+	font-size: 100%;
+	cursor: pointer;
+}
+#demo{
+	font-size: 100%;
+	cursor: pointer;
+}
+#mode{
+	text-align: center;
+}
+h2{
+	text-align: center;
+	color: red;
+}
+
+.downloadbutton{
+  text-align: right;
+}
+
+#tablecontainer{
+  padding: 1% 10%;
+}
+
+h2{
+  padding-left: 10%;
+}
+
+ol{
+  padding-left: 10%;
+}

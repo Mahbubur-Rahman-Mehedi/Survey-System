@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Survey System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google-fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&family=Roboto:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social/bootstrap-social.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="top_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+                <a class="navbar-brand text-uppercase" href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="Online Polling System - Logo">o . p . s</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown" style="padding-right: 30px;">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-bar-chart"></span> Survey Info
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#Create_Survey" data-toggle="tooltip"
+                                    data-placement="bottom" title="Create a New Survey?">Create Survey <span
+                                        class="fa fa-line-chart"></span></a>
+                                <a class="dropdown-item" href="#Current_Survey" data-toggle="tooltip"
+                                    data-placement="bottom" title="See The Current Survey">Current Survey <span
+                                        class="fa fa-check-square-o"></span></a>
+                                <a class="dropdown-item" href="#Survey_History" data-toggle="tooltip"
+                                    data-placement="bottom" title="View The All Previous Survey">Survey History<span
+                                        class="fa fa-history"></span> </a>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="padding-left: 10px;">
+                            <a data-toggle="modal" data-target="#reserveModal" class="nav-link" href="#"><span
+                                    class="fa fa-user"></span> User
+                                Info</a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 10px;">
+                            <a href="login.php"><span
+                                    class="fa fa-sign-in"></span> Login</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" id="" href="#">Logout</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- user-info-modal -->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">User Info</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="col-6"><span class="fa fa-user"></span> Name:</dt>
+                                    <dd class="col-6">Habiba Nasrin</dd>
+                                    <dt class="col-6"><span class="fa fa-at"></span> User_name:</dd>
+                                    <dd class="col-6">hbb_nasrin</dd>
+                                    <dt class="col-6"><span class="fa fa-globe"></span> Country:</dt>
+                                    <dd class="col-6">Bangaldesh</dd>
+                                    <dt class="col-6"><span class="fa fa-envelope"></span> Email:</dt>
+                                    <dd class="col-6">hbb.nasrin@gmail.com</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 row align-items-center justify-content-center">
+                                <button type="submit" class="btn btn-primary" data-toggle="tooltip"
+                                    data-placement="right" title="View or Edit User Info">
+                                    More Info <span class="fa fa-arrow-right"></span>
+                                </button>
+                            </div>
+                            <div class="col-12 row align-items-center justify-content-center"
+                                style="padding-top: 10px;">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-info-modal -->
+
+    <div class="welcome-content d-flex align-items-center justify-content-center">
+        <div class="welcome-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="welcome-text text-center">
+                            <span class="text-uppercase">Welcome to our website user!</span>
+                        </div>
+
+                    </div>
+
+                    <div class="online-p-area">
+                        <div class="col-12 text-center">
+                            <span class="h3">Online Polling System</span>
+                        </div>
+                        <div class="col-12 text-justify text-center p-content">
+                            <p>Dear user, an online poll is a survey in which participants communicate
+                                responses via Internet, typically by completing a questionnaire in a web
+                                page.
+                                We allow anyone to participate here for free. You can create survey,
+                                see current surveys and also check the history.
+                                Before creating a new survey
+                                or checking history you require to log in. We hope this system benefits you.
+                            </p>
+                            <span class="g-text">Good luck!</span>
+                            <section id="section10" class="demo">
+                                <a class="d-none d-lg-block d-xl-block" href="#go-survey"><span></span>Scroll</a>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- welcome area -->
+
+
+    </div>
+
+
+    <!-- go-survey -->
+    <div class="go-survey" id="go-survey">
+        <div class="container">
+            <div class="row" style="padding-bottom: 80px">
+                <div class="col-sm-8" id="Create_Survey">
+                    <img class="survey-img img-fluid" src="img/cre-survey.png" alt="">
+                </div>
+                <div class="btn-current-survey row align-items-center col-4 col-sm-4">
+                    <a href="#" class="btn" data-toggle="tooltip" data-placement="bottom"
+                        title="Create A New Survey?"><button type="button" class="btn btn-create-s"><a href="makequestion.html">Create
+                            Survey</a></button></a>
+                </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="row" style="padding: 80px 0 80px 0">
+                <div class=" col-sm-4" id="Current_Survey">
+                    <img class="survey-img img-fluid" src="img/current.png" alt="">
+                </div>
+                <div class="btn-current-survey row align-items-center order-sm-first col-sm-8">
+                    <a href="#" class="btn"><button type="button" class="btn btn-current-s" data-toggle="tooltip"
+                            data-placement="bottom" title="See The Current Survey!"><a href="History.php">Current Survey</a></button></a>
+                </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-sm-8" id="Survey_History">
+                    <img class="survey-img img-fluid" src="img/history.png" alt="">
+                </div>
+                <div class="btn-current-survey row align-items-center col-4 col-sm-4">
+                    <a href="#" class="btn"><button type="button" class="btn btn-history-s" data-toggle="tooltip"
+                            data-placement="bottom" title="Viw All Previous Survey Data"><a href="History.php">  Survey History</a></button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- go-survey -->
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">An online poll is a survey in which participants communicate responses via
+                        Internet, typically by completing a questionnaire in a web page. We allow anyone to participate
+                        here for free. You can create survey, see current surveys and also check the history. Before
+                        creating a new survey or checking history you require to log in. We hope this system benefits
+                        you.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                        <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                        <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                        <a href="#">O. P. S - Online Polling System</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery first,then Bootstrap JS. -->
+
+    <script src="js/jquery/dist/jquery.slim.min.js"></script>
+    <script src="js/popper.js/dist/umd/popper.min.js"></script>
+    <script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+    <!-- js-script -->
+    <script>
+        // for-scroll
+        $(function () {
+            $('a[href*=#]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+        });
+
+        // for-tooltip
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

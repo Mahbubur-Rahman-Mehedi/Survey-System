@@ -1,0 +1,108 @@
+h2{
+	text-align: center;
+	color: red;
+}
+
+
+#HISTORY{margin: auto;
+		padding-top: 0%}
+
+.navbar {
+  overflow: hidden;
+  background-color: #bfbfbf;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color:white;
+ }
+
+.row{
+	padding-top: 70px;
+}
+
+h1{
+	position: fixed;
+	color: white;
+	text-align: center;
+	padding-left: 10%;
+}
+#pc{
+  padding: 1% 10%;
+}
+
+#cc{
+	padding: 1% 10%;
+	cursor: pointer;
+}
+.btn{
+	cursor: pointer;
+}
+.btn:hover {
+	font-size: 80%;
+  background-color: red;
+}
+#home{
+	background-color: black;
+	color: white;
+	  cursor: pointer;
+}
+#home:hover {
+	font-size: 120%;
+  background-color: red;
+}
+.logout{
+	background-color: black;
+	color: white;
+	cursor :pointer;
+}
+.logout:hover {
+	font-size: 120%;
+  background-color: red;
+}
+.right{
+	background-color: red;
+	color: white;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+
+
+}
+.col{
+	 border-style: solid;
+  border-color: yellow;
+  color: green;
+}
+
+#main-footer {
+    position: fixed;
+    padding: 50px;
+    bottom: -6%;
+    margin-left: 25%;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+
+#php{
+	position: fixed;
+	color: red;
+	text-align: center;
+}
+
+#btn_1{
+	text-align: center;
+	margin-left: 250px;
+	padding-left: -8px;
+	background-color: #ffff33;
+	cursor: pointer;
+}
+#btn_1:hover{
+	background-color:  red;
+}
